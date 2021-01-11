@@ -1,6 +1,6 @@
 # Calculadora IMC
 
-Implementa esta calculadora del IMC.
+Implementa esta calculadora del IMC. [Demo](https://omiras.github.io/BMI-calculator/)
 Puedes seguir la formula:
 
 ```js
