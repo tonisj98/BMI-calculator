@@ -8,4 +8,4 @@ Puedes seguir la formula:
 ```
 
 Intenta NO modificar el HTML. Usa selectores CSS para conseguirlo.
-Fíjate que los controles se encuetnran dentro de un formulario. Deberás usar el evento ['submit'](https://learn.jquery.com/events/introduction-to-events/)
+Fíjate que los controles se encuentran dentro de un formulario. Deberás usar el evento ['submit'](https://learn.jquery.com/events/introduction-to-events/)
