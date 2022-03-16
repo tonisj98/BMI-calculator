@@ -6,6 +6,4 @@ Puedes seguir la formula:
 ```js
     const imc = (weight / ((height*height)/10000))
 ```
-
-Intenta NO modificar el HTML. Usa selectores CSS para conseguirlo.
-Fíjate que los controles se encuentran dentro de un formulario. Deberás usar el evento ['submit'](https://learn.jquery.com/events/introduction-to-events/)
+Usa las validaciones de formulario que creas necesarias.
