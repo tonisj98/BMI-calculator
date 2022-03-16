@@ -1,23 +1,26 @@
 // Implementar el código aqui
 
-
 const form = document.querySelector('form');
-console.log(form)
-
-// Escuchar el evento 'submit'
 
 form.addEventListener('submit', function(e){
-
-const height = document.querySelector("#height").value
-const weight = document.querySelector("#weight").value
-
-height = height *100
-height = height * height
-let resultado = weight / height
-
-let mensaje = document.getElementById("mensaje").textContent
-document.mensaje.textContent = resultado
-
-
-
+    e.preventDefault();
+    
+    const height = parseInt(document.querySelector('#height').value);
+    const weight = parseInt(document.querySelector('#weight').value);
+    const results = document.querySelector('#results');
+    
+    if((height === '') || (height < 0) || (isNaN(height))){
+        //NaN !== NaN
+        results.innerHTML = "Please provide a valid height";
+        
+    } else if (weight === '' || weight < 0 || isNaN(weight)){
+        results.innerHTML = "Please provide a valid weight";
+    } else {
+    //calculate BMI
+    const bmi = (weight / ((height*height)/10000)).toFixed(2);
+    //display the results
+    results.innerHTML = `<span>${bmi}</span>`
+    }
+    
+    
 });
